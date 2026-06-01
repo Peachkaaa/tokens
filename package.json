@@ -7,7 +7,7 @@
     "dev": "npm run build:tokens && nuxt dev",
     "generate": "npm run build:tokens && nuxt generate",
     "preview": "nuxt preview",
-    "build:tokens": "style-dictionary build --config style-dictionary.config.mjs",
+    "build:tokens": "style-dictionary build --config style-dictionary.config.mjs && node scripts/generate-tailwind-token-colors.mjs",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {

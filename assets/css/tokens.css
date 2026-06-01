@@ -1,29 +1,19 @@
-/**
- * Do not edit directly, this file was auto-generated.
+/*
+ * Generated from tokens/ via Style Dictionary.
+ * Run npm run build:tokens to regenerate locally.
  */
 
 :root {
-  --primariMode1Green100: #13ad63;
-  --primariMode1Green200: #158655;
-  --primariMode1Green300: #158654;
-  --primariMode1Green400: #13613b;
-  --primariMode1Gray100: #f8f9fa;
-  --primariMode1Gray150: #e9ecef;
-  --primariMode1Gray200: #dee2e6;
-  --primariMode1Gray400: #ced4da;
-  --primariMode1Gray500: #adb5bd;
-  --primariMode1Gray600: #6c757d;
-  --primariMode1Gray700: #495057;
-  --primariMode1Gray800: #343a40;
-  --primariMode1Gray950: #1d1d1d;
-  --primariMode1Sky600: #008bc4;
-  --primariMode1Yellow300: #fcdc2d;
-  --primariMode1Red50: rgba(238, 53, 36, 0.4);
-  --primariMode1Red100: #ee3524;
-  --tokensLightBorderBorderGrey100: var(--primariMode1Gray100);
-  --tokensLightBorderBorderGrey700: var(--primariMode1Gray700);
-  --tokensLightButtonButtonRed100: var(--primariMode1Red100);
-  --tokensLightButtonButtonGreen300: var(--primariMode1Green300);
-  --tokensLightBackgroundBackgroundYellow100: var(--primariMode1Yellow300);
-  --tokensLightBackgroundBackgroundSky600: var(--primariMode1Sky600);
+  --colorGray100: #F8F9FA;
+  --colorGray700: #495057;
+  --colorRed100: #EE3524;
+  --colorGreen300: #158654;
+  --colorYellow300: #FCDC2D;
+  --colorSky600: #008BC4;
+  --borderGrey100: var(--colorGray100);
+  --borderGrey700: var(--colorGray700);
+  --buttonRed100: var(--colorRed100);
+  --buttonGreen300: var(--colorGreen300);
+  --backgroundYellow100: var(--colorYellow300);
+  --backgroundSky600: var(--colorSky600);
 }
