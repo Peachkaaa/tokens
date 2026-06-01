@@ -23,7 +23,7 @@
   --tokensLightBorderBorderGrey100: var(--primariMode1Gray100);
   --tokensLightBorderBorderGrey700: var(--primariMode1Gray700);
   --tokensLightButtonButtonRed100: var(--primariMode1Red100);
-  --tokensLightButtonButtonGreen300: var(--primariMode1Green300);
+  --tokensLightButtonButtonGreen300: var(--primariMode1Gray950);
   --tokensLightBackgroundBackgroundYellow100: var(--primariMode1Yellow300);
   --tokensLightBackgroundBackgroundSky600: var(--primariMode1Sky600);
 }

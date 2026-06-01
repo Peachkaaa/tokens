@@ -11,7 +11,7 @@ export default {
   platforms: {
     css: {
       transformGroup: 'tokens-studio',
-      buildPath: 'assets/css/',
+      buildPath: 'app/assets/css/',
       files: [
         {
           destination: 'tokens.css',
