@@ -180,7 +180,7 @@
         "$value": "#ee3524"
       }
     },
-    "base": {
+    "text-base": {
       "$type": "typography",
       "$value": {
         "fontWeight": "400",
