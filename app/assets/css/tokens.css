@@ -3,6 +3,10 @@
  */
 
 :root {
+  --tokensLightSmall: 2px;
+  --tokensLightMedium: 4px;
+  --tokensLightBase: 400 16px/20 sans-serif;
+  --tokensLightH5: 400 20px/20 sans-serif;
   --primariMode1Green100: #13ad63;
   --primariMode1Green200: #158655;
   --primariMode1Green300: #158654;

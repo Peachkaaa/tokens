@@ -19,6 +19,10 @@ export const tokenColors = {
   'token-red-100': 'var(--primariMode1Red100)',
   'token-red-50': 'var(--primariMode1Red50)',
   'token-sky-600': 'var(--primariMode1Sky600)',
+  'token-tokens-light-base': 'var(--tokensLightBase)',
+  'token-tokens-light-h5': 'var(--tokensLightH5)',
+  'token-tokens-light-medium': 'var(--tokensLightMedium)',
+  'token-tokens-light-small': 'var(--tokensLightSmall)',
   'token-yellow-300': 'var(--primariMode1Yellow300)',
 } as const;
 

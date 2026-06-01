@@ -10,7 +10,7 @@
           "com.figma.hiddenFromPublishing": false
         },
         "$type": "color",
-        "$value": "{gray.100}"
+        "$value": "{primari/Mode 1.gray.100}"
       },
       "border-grey-700": {
         "$extensions": {
@@ -20,7 +20,7 @@
           "com.figma.hiddenFromPublishing": false
         },
         "$type": "color",
-        "$value": "{gray.700}"
+        "$value": "{primari/Mode 1.gray.700}"
       }
     },
     "button": {
@@ -32,7 +32,7 @@
           "com.figma.hiddenFromPublishing": false
         },
         "$type": "color",
-        "$value": "{red.100}"
+        "$value": "{primari/Mode 1.red.100}"
       },
       "button-green-300": {
         "$extensions": {
@@ -42,7 +42,7 @@
           "com.figma.hiddenFromPublishing": false
         },
         "$type": "color",
-        "$value": "{gray.950}"
+        "$value": "{primari/Mode 1.gray.950}"
       }
     },
     "background": {
@@ -54,7 +54,7 @@
           "com.figma.hiddenFromPublishing": false
         },
         "$type": "color",
-        "$value": "{yellow.300}"
+        "$value": "{primari/Mode 1.yellow.300}"
       },
       "background-sky-600": {
         "$extensions": {
@@ -64,7 +64,7 @@
           "com.figma.hiddenFromPublishing": false
         },
         "$type": "color",
-        "$value": "{sky.600}"
+        "$value": "{primari/Mode 1.sky.600}"
       }
     },
     "small": {

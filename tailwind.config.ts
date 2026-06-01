@@ -2,12 +2,9 @@ import type { Config } from 'tailwindcss';
 import { 
   tokenColors,
   tokenBorder,
-  tokenBorderRadius,
-  tokenButton,
   tokenBackground,
-  tokenFontSize,
-  tokenSpacing,
-  tokenBoxShadow
+  tokenButton,
+  
 } from './tailwind.tokens.generated';
 
 export default {
@@ -23,15 +20,12 @@ export default {
     extend: {
       colors: tokenColors,
       borderColor: tokenBorder,
-      borderRadius: tokenBorderRadius,
       backgroundColor: {
         ...tokenColors,
-        ...tokenBackground
+        ...tokenBackground,
+        ...tokenButton
       },
-      fontSize: tokenFontSize,
-      spacing: tokenSpacing,
-      boxShadow: tokenBoxShadow,
-      // Utilizziamo anche i token colore per textColor e altri usi
+
       textColor: tokenColors
     }
   }
