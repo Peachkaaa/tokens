@@ -1,0 +1,19 @@
+/*
+ * Manual design tokens.
+ * Update values here based on your Figma tokens.
+ */
+
+:root {
+  --colorGray100: #e5e7eb;
+  --colorGray700: #374151;
+  --colorRed100: #ff3b30;
+  --colorGreen300: #15a76a;
+  --colorYellow300: #f3d537;
+  --colorSky600: #0ea5e9;
+  --borderGrey100: var(--colorGray100);
+  --borderGrey700: var(--colorGray700);
+  --buttonRed100: var(--colorRed100);
+  --buttonGreen300: var(--colorGreen300);
+  --backgroundYellow100: var(--colorYellow300);
+  --backgroundSky600: var(--colorSky600);
+}
