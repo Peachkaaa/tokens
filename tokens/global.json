@@ -1,97 +1,4 @@
 {
-  "global": {},
-  "Tokens/Light": {
-    "border": {
-      "border-grey-100": {
-        "$extensions": {
-          "com.figma.scopes": [
-            "ALL_SCOPES"
-          ],
-          "com.figma.hiddenFromPublishing": false
-        },
-        "$type": "color",
-        "$value": "{primari/Mode 1.gray.100}"
-      },
-      "border-grey-700": {
-        "$extensions": {
-          "com.figma.scopes": [
-            "ALL_SCOPES"
-          ],
-          "com.figma.hiddenFromPublishing": false
-        },
-        "$type": "color",
-        "$value": "{primari/Mode 1.gray.700}"
-      }
-    },
-    "button": {
-      "button-red-100": {
-        "$extensions": {
-          "com.figma.scopes": [
-            "ALL_SCOPES"
-          ],
-          "com.figma.hiddenFromPublishing": false
-        },
-        "$type": "color",
-        "$value": "{primari/Mode 1.red.100}"
-      },
-      "button-green-300": {
-        "$extensions": {
-          "com.figma.scopes": [
-            "ALL_SCOPES"
-          ],
-          "com.figma.hiddenFromPublishing": false
-        },
-        "$type": "color",
-        "$value": "{primari/Mode 1.gray.950}"
-      }
-    },
-    "background": {
-      "background-yellow-100": {
-        "$extensions": {
-          "com.figma.scopes": [
-            "ALL_SCOPES"
-          ],
-          "com.figma.hiddenFromPublishing": false
-        },
-        "$type": "color",
-        "$value": "{primari/Mode 1.yellow.300}"
-      },
-      "background-sky-600": {
-        "$extensions": {
-          "com.figma.scopes": [
-            "ALL_SCOPES"
-          ],
-          "com.figma.hiddenFromPublishing": false
-        },
-        "$type": "color",
-        "$value": "{primari/Mode 1.sky.600}"
-      }
-    },
-    "small": {
-      "$type": "borderRadius",
-      "$value": "2px"
-    },
-    "medium": {
-      "$type": "borderRadius",
-      "$value": "4px"
-    },
-    "base": {
-      "$type": "typography",
-      "$value": {
-        "fontWeight": "400",
-        "fontSize": "16",
-        "lineHeight": "20"
-      }
-    },
-    "h5": {
-      "$type": "typography",
-      "$value": {
-        "lineHeight": "20",
-        "fontWeight": "400",
-        "fontSize": "20"
-      }
-    }
-  },
   "primari/Mode 1": {
     "green": {
       "100": {
@@ -272,13 +179,19 @@
         "$type": "color",
         "$value": "#ee3524"
       }
+    },
+    "base": {
+      "$type": "typography",
+      "$value": {
+        "fontWeight": "400",
+        "fontSize": "16",
+        "lineHeight": "20"
+      }
     }
   },
   "$themes": [],
   "$metadata": {
     "tokenSetOrder": [
-      "global",
-      "Tokens/Light",
       "primari/Mode 1"
     ]
   }
