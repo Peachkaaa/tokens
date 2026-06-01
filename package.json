@@ -3,15 +3,20 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
+    "build": "npm run build:tokens && nuxt build",
+    "dev": "npm run build:tokens && nuxt dev",
+    "generate": "npm run build:tokens && nuxt generate",
     "preview": "nuxt preview",
+    "build:tokens": "style-dictionary build --config style-dictionary.config.mjs",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
     "nuxt": "^4.4.6",
     "vue": "^3.5.34",
     "vue-router": "^5.0.7"
+  },
+  "devDependencies": {
+    "@tokens-studio/sd-transforms": "^2.0.3",
+    "style-dictionary": "^5.4.2"
   }
 }

@@ -1,26 +1,57 @@
-# Tokens Manuali in Nuxt
+# Figma Tokens in Nuxt
 
-Questo progetto usa token gestiti manualmente nel file CSS:
+Questo progetto e' configurato per il flusso Tokens Studio -> GitHub -> CSS variables.
 
-- `assets/css/tokens.css`
+## Come funziona
 
-Nuxt carica questo file globalmente, quindi le variabili sono disponibili in tutta l'app.
+1. Modifichi i token in Figma con Tokens Studio.
+2. Dal plugin fai sync su GitHub nella cartella `tokens/`.
+3. La repo riceve il JSON aggiornato.
+4. `style-dictionary` converte i token in `assets/css/tokens.css`.
+5. Nuxt carica quel CSS globalmente tramite `nuxt.config.ts`.
 
-## Flusso manuale
+## Setup Tokens Studio
 
-1. Copia i nomi token da Figma.
-2. Inserisci/aggiorna le variabili CSS in `assets/css/tokens.css`.
-3. Usa le variabili nei componenti (`var(--nomeToken)`).
+Nel plugin Tokens Studio:
 
-## Comandi principali
+1. Apri `Settings` -> `Sync`.
+2. Scegli `GitHub` come provider.
+3. Configura:
+   - repository: `Peachkaaa/tokens`
+   - branch: `main`
+   - path: `tokens`
+4. Salva e fai `Push` dal plugin.
+
+Il file starter in repo e' `tokens/global.json`, ma il plugin puo' creare anche altri file o set.
+
+## Build locale
 
 ```bash
 npm install
+npm run build:tokens
 npm run dev
-npm run build
 ```
 
-## Esempio
+`dev`, `build` e `generate` eseguono automaticamente `build:tokens` prima di Nuxt.
+
+## Build automatica in GitHub
+
+La repo include il workflow GitHub Actions `.github/workflows/build-token-css.yml`.
+
+Quando cambia un file in `tokens/`, GitHub Actions:
+
+1. installa le dipendenze
+2. esegue `npm run build:tokens`
+3. aggiorna `assets/css/tokens.css`
+4. fa commit del CSS generato se e' cambiato
+
+## Dove trovi i file principali
+
+- sorgente token: `tokens/`
+- config build: `style-dictionary.config.mjs`
+- output CSS: `assets/css/tokens.css`
+
+## Esempio d'uso
 
 ```css
 button {
