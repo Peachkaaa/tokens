@@ -42,7 +42,7 @@
           "com.figma.hiddenFromPublishing": false
         },
         "$type": "color",
-        "$value": "{green.300}"
+        "$value": "{gray.950}"
       }
     },
     "background": {
