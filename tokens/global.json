@@ -9,7 +9,7 @@
           "com.figma.hiddenFromPublishing": false
         },
         "$type": "color",
-        "$value": "#f81717"
+        "$value": "#d29797"
       }
     },
     "Yellow": {
@@ -84,8 +84,7 @@
       "L": {
         "$extensions": {
           "com.figma.scopes": [
-            "GAP",
-            "FONT_SIZE"
+            "GAP"
           ],
           "com.figma.hiddenFromPublishing": false
         },
@@ -95,8 +94,7 @@
       "M": {
         "$extensions": {
           "com.figma.scopes": [
-            "GAP",
-            "FONT_SIZE"
+            "GAP"
           ],
           "com.figma.hiddenFromPublishing": false
         },
@@ -106,8 +104,7 @@
       "S": {
         "$extensions": {
           "com.figma.scopes": [
-            "GAP",
-            "FONT_SIZE"
+            "GAP"
           ],
           "com.figma.hiddenFromPublishing": false
         },
