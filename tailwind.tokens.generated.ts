@@ -8,9 +8,9 @@ export const tokenColors = {
   'token-primary-value-green100': 'var(--primaryValueGreen100)',
   'token-primary-value-green200': 'var(--primaryValueGreen200)',
   'token-primary-value-red100': 'var(--primaryValueRed100)',
-  'token-primary-value-s-izing-l': 'var(--primaryValueSIzingL)',
-  'token-primary-value-s-izing-m': 'var(--primaryValueSIzingM)',
-  'token-primary-value-s-izing-s': 'var(--primaryValueSIzingS)',
+  'token-primary-value-sizing-l': 'var(--primaryValueSizingL)',
+  'token-primary-value-sizing-m': 'var(--primaryValueSizingM)',
+  'token-primary-value-sizing-s': 'var(--primaryValueSizingS)',
   'token-primary-value-violet100': 'var(--primaryValueViolet100)',
   'token-primary-value-yellow100': 'var(--primaryValueYellow100)',
 } as const;
