@@ -80,7 +80,7 @@
         "$value": "#9c03a7"
       }
     },
-    "SIzing": {
+    "Sizing": {
       "L": {
         "$extensions": {
           "com.figma.scopes": [
@@ -89,7 +89,7 @@
           "com.figma.hiddenFromPublishing": false
         },
         "$type": "number",
-        "$value": 24
+        "$value": "24"
       },
       "M": {
         "$extensions": {
@@ -99,7 +99,7 @@
           "com.figma.hiddenFromPublishing": false
         },
         "$type": "number",
-        "$value": 16
+        "$value": "16"
       },
       "S": {
         "$extensions": {
@@ -109,7 +109,7 @@
           "com.figma.hiddenFromPublishing": false
         },
         "$type": "number",
-        "$value": 8
+        "$value": "8"
       }
     }
   },
