@@ -114,14 +114,6 @@
         "$type": "number",
         "$value": 8
       }
-    },
-    "Text": {
-      "L": {
-        "$type": "typography",
-        "$value": {
-          "fontSize": "{Primary/Value.Sizing.L}"
-        }
-      }
     }
   },
   "$themes": [],
