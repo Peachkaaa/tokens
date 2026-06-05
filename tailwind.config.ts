@@ -4,7 +4,6 @@ import {
   tokenBorder,
   tokenBackground,
   tokenButton,
-  
 } from './tailwind.tokens.generated';
 
 export default {
@@ -25,7 +24,6 @@ export default {
         ...tokenBackground,
         ...tokenButton
       },
-
       textColor: tokenColors
     }
   }

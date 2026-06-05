@@ -3,10 +3,6 @@
  */
 
 :root {
-  --tokensLightSmall: 2px;
-  --tokensLightMedium: 4px;
-  --tokensLightBase: 400 16px/20 sans-serif;
-  --tokensLightH5: 400 20px/20 sans-serif;
   --primariMode1Green100: #13ad63;
   --primariMode1Green200: #158655;
   --primariMode1Green300: #158654;
@@ -24,10 +20,5 @@
   --primariMode1Yellow300: #fcdc2d;
   --primariMode1Red50: rgba(238, 53, 36, 0.4);
   --primariMode1Red100: #ee3524;
-  --tokensLightBorderBorderGrey100: var(--primariMode1Gray100);
-  --tokensLightBorderBorderGrey700: var(--primariMode1Gray700);
-  --tokensLightButtonButtonRed100: var(--primariMode1Red100);
-  --tokensLightButtonButtonGreen300: var(--primariMode1Gray950);
-  --tokensLightBackgroundBackgroundYellow100: var(--primariMode1Yellow300);
-  --tokensLightBackgroundBackgroundSky600: var(--primariMode1Sky600);
+  --primariMode1TextBase: 400 16px/20 sans-serif;
 }
