@@ -114,6 +114,14 @@
         "$type": "number",
         "$value": 8
       }
+    },
+    "Text": {
+      "L": {
+        "$type": "typography",
+        "$value": {
+          "fontSize": "{Sizing.L}"
+        }
+      }
     }
   },
   "$themes": [],
