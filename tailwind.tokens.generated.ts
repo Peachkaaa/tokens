@@ -3,13 +3,16 @@
 // Token categories: colors, border, borderRadius, button, background, typography, spacing, boxShadow
 
 export const tokenColors = {
-  'token-primary-mode1-blue100': 'var(--primaryMode1Blue100)',
-  'token-primary-mode1-blue200': 'var(--primaryMode1Blue200)',
-  'token-primary-mode1-green100': 'var(--primaryMode1Green100)',
-  'token-primary-mode1-green200': 'var(--primaryMode1Green200)',
-  'token-primary-mode1-red100': 'var(--primaryMode1Red100)',
-  'token-primary-mode1-violet100': 'var(--primaryMode1Violet100)',
-  'token-primary-mode1-yellow100': 'var(--primaryMode1Yellow100)',
+  'token-primary-value-blue100': 'var(--primaryValueBlue100)',
+  'token-primary-value-blue200': 'var(--primaryValueBlue200)',
+  'token-primary-value-green100': 'var(--primaryValueGreen100)',
+  'token-primary-value-green200': 'var(--primaryValueGreen200)',
+  'token-primary-value-red100': 'var(--primaryValueRed100)',
+  'token-primary-value-s-izing-l': 'var(--primaryValueSIzingL)',
+  'token-primary-value-s-izing-m': 'var(--primaryValueSIzingM)',
+  'token-primary-value-s-izing-s': 'var(--primaryValueSIzingS)',
+  'token-primary-value-violet100': 'var(--primaryValueViolet100)',
+  'token-primary-value-yellow100': 'var(--primaryValueYellow100)',
 } as const;
 
 export const tokenBorder = {
