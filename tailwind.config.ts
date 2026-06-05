@@ -18,6 +18,7 @@ export default {
       colors: tokenColors,
       padding: tokenSizing,
       gap: tokenSizing,
+      fontSize: tokenSizing,
     }
   }
 } satisfies Config;
