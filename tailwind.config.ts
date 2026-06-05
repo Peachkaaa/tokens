@@ -23,16 +23,4 @@ export default {
       fontSize: tokenSizing,
     }
   },
-  plugins: [
-    plugin(({ addUtilities }) => {
-      const typographyUtilities = Object.fromEntries(
-        Object.entries(tokenTypography).map(([key, value]) => [
-          `.text-${key}`,
-          { font: value }
-        ])
-      );
-
-      addUtilities(typographyUtilities);
-    })
-  ]
 } satisfies Config;
