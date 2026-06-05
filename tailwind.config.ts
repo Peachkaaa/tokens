@@ -1,9 +1,7 @@
 import type { Config } from 'tailwindcss';
 import { 
   tokenColors,
-  tokenBorder,
-  tokenBackground,
-  tokenButton,
+  tokenSizing,
 } from './tailwind.tokens.generated';
 
 export default {
@@ -18,7 +16,8 @@ export default {
   theme: {
     extend: {
       colors: tokenColors,
-   
+      padding: tokenSizing,
+      gap: tokenSizing,
     }
   }
 } satisfies Config;

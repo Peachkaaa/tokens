@@ -1,8 +1,8 @@
 <template>
-  <div class="p-10 bg-token-primary-mode1-blue100 flex gap-4">
-   <div class="h-20 w-20 bg-token-primary-mode1-violet100"></div>
-   <div class="h-20 w-20 bg-token-primary-mode1-yellow100"></div>
-   <div class="h-20 w-20 bg-token-primary-mode1-green100"></div>
-   <div class="h-20 w-20 bg-token-primary-mode1-red100"></div>
+  <div class="p-10 bg-token-primary-value-blue100 flex gap-token-primary-value-sizing-m">
+   <div class="h-20 w-20 bg-token-primary-value-violet100"></div>
+   <div class="h-20 w-20 bg-token-primary-value-yellow100"></div>
+   <div class="h-20 w-20 bg-token-primary-value-green100"></div>
+   <div class="h-20 w-20 bg-token-primary-value-red100"></div>
   </div>
 </template>
