@@ -31,6 +31,7 @@ export const tokenBackground = {
 } as const;
 
 export const tokenTypography = {
+  'token-primary-value-text-l': 'var(--primaryValueTextL)',
 } as const;
 
 export const tokenSpacing = {

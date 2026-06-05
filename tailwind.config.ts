@@ -1,7 +1,9 @@
 import type { Config } from 'tailwindcss';
+import plugin from 'tailwindcss/plugin';
 import { 
   tokenColors,
   tokenSizing,
+  tokenTypography,
 } from './tailwind.tokens.generated';
 
 export default {
@@ -20,5 +22,17 @@ export default {
       gap: tokenSizing,
       fontSize: tokenSizing,
     }
-  }
+  },
+  plugins: [
+    plugin(({ addUtilities }) => {
+      const typographyUtilities = Object.fromEntries(
+        Object.entries(tokenTypography).map(([key, value]) => [
+          `.text-${key}`,
+          { font: value }
+        ])
+      );
+
+      addUtilities(typographyUtilities);
+    })
+  ]
 } satisfies Config;

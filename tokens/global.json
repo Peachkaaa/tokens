@@ -119,7 +119,7 @@
       "L": {
         "$type": "typography",
         "$value": {
-          "fontSize": "{Sizing.L}"
+          "fontSize": "{Primary/Value.Sizing.L}"
         }
       }
     }
