@@ -1,5 +1,5 @@
 {
-  "Primary/Mode 1": {
+  "Primary/Value": {
     "Red": {
       "100": {
         "$extensions": {
@@ -79,12 +79,44 @@
         "$type": "color",
         "$value": "#9c03a7"
       }
+    },
+    "SIzing": {
+      "L": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "GAP"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "$type": "number",
+        "$value": 24
+      },
+      "M": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "GAP"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "$type": "number",
+        "$value": 16
+      },
+      "S": {
+        "$extensions": {
+          "com.figma.scopes": [
+            "GAP"
+          ],
+          "com.figma.hiddenFromPublishing": false
+        },
+        "$type": "number",
+        "$value": 8
+      }
     }
   },
   "$themes": [],
   "$metadata": {
     "tokenSetOrder": [
-      "Primary/Mode 1"
+      "Primary/Value"
     ]
   }
 }
