@@ -3,57 +3,13 @@
 // Token categories: colors, border, borderRadius, button, background, typography, spacing, boxShadow
 
 export const tokenColors = {
-  'token-gray-100': 'var(--primariMode1Gray100)',
-  'token-gray-150': 'var(--primariMode1Gray150)',
-  'token-gray-200': 'var(--primariMode1Gray200)',
-  'token-gray-400': 'var(--primariMode1Gray400)',
-  'token-gray-500': 'var(--primariMode1Gray500)',
-  'token-gray-600': 'var(--primariMode1Gray600)',
-  'token-gray-700': 'var(--primariMode1Gray700)',
-  'token-gray-800': 'var(--primariMode1Gray800)',
-  'token-gray-950': 'var(--primariMode1Gray950)',
-  'token-green-100': 'var(--primariMode1Green100)',
-  'token-green-200': 'var(--primariMode1Green200)',
-  'token-green-300': 'var(--primariMode1Green300)',
-  'token-green-400': 'var(--primariMode1Green400)',
-  'token-primari-mode1-gray100': 'var(--primariMode1PrimariMode1Gray100)',
-  'token-primari-mode1-gray150': 'var(--primariMode1PrimariMode1Gray150)',
-  'token-primari-mode1-gray200': 'var(--primariMode1PrimariMode1Gray200)',
-  'token-primari-mode1-gray400': 'var(--primariMode1PrimariMode1Gray400)',
-  'token-primari-mode1-gray500': 'var(--primariMode1PrimariMode1Gray500)',
-  'token-primari-mode1-gray600': 'var(--primariMode1PrimariMode1Gray600)',
-  'token-primari-mode1-gray700': 'var(--primariMode1PrimariMode1Gray700)',
-  'token-primari-mode1-gray800': 'var(--primariMode1PrimariMode1Gray800)',
-  'token-primari-mode1-gray950': 'var(--primariMode1PrimariMode1Gray950)',
-  'token-primari-mode1-green100': 'var(--primariMode1PrimariMode1Green100)',
-  'token-primari-mode1-green200': 'var(--primariMode1PrimariMode1Green200)',
-  'token-primari-mode1-green300': 'var(--primariMode1PrimariMode1Green300)',
-  'token-primari-mode1-green400': 'var(--primariMode1PrimariMode1Green400)',
-  'token-primari-mode1-red100': 'var(--primariMode1PrimariMode1Red100)',
-  'token-primari-mode1-red50': 'var(--primariMode1PrimariMode1Red50)',
-  'token-primari-mode1-sky600': 'var(--primariMode1PrimariMode1Sky600)',
-  'token-primari-mode1-yellow300': 'var(--primariMode1PrimariMode1Yellow300)',
-  'token-red-100': 'var(--primariMode1Red100)',
-  'token-red-50': 'var(--primariMode1Red50)',
-  'token-sky-600': 'var(--primariMode1Sky600)',
-  'token-value-gray-100': 'var(--primariMode1ValueGray100)',
-  'token-value-gray-150': 'var(--primariMode1ValueGray150)',
-  'token-value-gray-200': 'var(--primariMode1ValueGray200)',
-  'token-value-gray-400': 'var(--primariMode1ValueGray400)',
-  'token-value-gray-500': 'var(--primariMode1ValueGray500)',
-  'token-value-gray-600': 'var(--primariMode1ValueGray600)',
-  'token-value-gray-700': 'var(--primariMode1ValueGray700)',
-  'token-value-gray-800': 'var(--primariMode1ValueGray800)',
-  'token-value-gray-950': 'var(--primariMode1ValueGray950)',
-  'token-value-green-100': 'var(--primariMode1ValueGreen100)',
-  'token-value-green-200': 'var(--primariMode1ValueGreen200)',
-  'token-value-green-300': 'var(--primariMode1ValueGreen300)',
-  'token-value-green-400': 'var(--primariMode1ValueGreen400)',
-  'token-value-red-100': 'var(--primariMode1ValueRed100)',
-  'token-value-red-50': 'var(--primariMode1ValueRed50)',
-  'token-value-sky-600': 'var(--primariMode1ValueSky600)',
-  'token-value-yellow-300': 'var(--primariMode1ValueYellow300)',
-  'token-yellow-300': 'var(--primariMode1Yellow300)',
+  'token-primary-mode1-blue100': 'var(--primaryMode1Blue100)',
+  'token-primary-mode1-blue200': 'var(--primaryMode1Blue200)',
+  'token-primary-mode1-green100': 'var(--primaryMode1Green100)',
+  'token-primary-mode1-green200': 'var(--primaryMode1Green200)',
+  'token-primary-mode1-red100': 'var(--primaryMode1Red100)',
+  'token-primary-mode1-violet100': 'var(--primaryMode1Violet100)',
+  'token-primary-mode1-yellow100': 'var(--primaryMode1Yellow100)',
 } as const;
 
 export const tokenBorder = {
@@ -69,7 +25,6 @@ export const tokenBackground = {
 } as const;
 
 export const tokenTypography = {
-  'token-text-base': 'var(--primariMode1TextBase)',
 } as const;
 
 export const tokenSpacing = {

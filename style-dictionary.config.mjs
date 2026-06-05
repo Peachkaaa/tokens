@@ -9,22 +9,9 @@ export default {
   source: ['tokens/**/*.json', '!tokens/**/$*.json'],
   preprocessors: ['tokens-studio'],
   platforms: {
-    cssApp: {
+    css: {
       transformGroup: 'tokens-studio',
       buildPath: 'app/assets/css/',
-      files: [
-        {
-          destination: 'tokens.css',
-          format: 'css/variables',
-          options: {
-            outputReferences: true
-          }
-        }
-      ]
-    },
-    cssRoot: {
-      transformGroup: 'tokens-studio',
-      buildPath: 'assets/css/',
       files: [
         {
           destination: 'tokens.css',

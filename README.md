@@ -7,7 +7,7 @@ Questo progetto e' configurato per il flusso Tokens Studio -> GitHub -> CSS vari
 1. Modifichi i token in Figma con Tokens Studio.
 2. Dal plugin fai sync su GitHub nella cartella `tokens/`.
 3. La repo riceve il JSON aggiornato.
-4. `style-dictionary` converte i token in `assets/css/tokens.css`.
+4. `style-dictionary` converte i token in `app/assets/css/tokens.css`.
 5. Nuxt carica quel CSS globalmente tramite `nuxt.config.ts`.
 
 ## Setup Tokens Studio
@@ -42,14 +42,14 @@ Quando cambia un file in `tokens/`, GitHub Actions:
 
 1. installa le dipendenze
 2. esegue `npm run build:tokens`
-3. aggiorna `assets/css/tokens.css`
-4. fa commit del CSS generato se e' cambiato
+3. aggiorna `app/assets/css/tokens.css` e `tailwind.tokens.generated.ts`
+4. fa commit dei file generati se sono cambiati
 
 ## Dove trovi i file principali
 
 - sorgente token: `tokens/`
 - config build: `style-dictionary.config.mjs`
-- output CSS: `assets/css/tokens.css`
+- output CSS: `app/assets/css/tokens.css`
 
 ## Esempio d'uso
 

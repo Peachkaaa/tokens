@@ -18,13 +18,7 @@ export default {
   theme: {
     extend: {
       colors: tokenColors,
-      borderColor: tokenBorder,
-      backgroundColor: {
-        ...tokenColors,
-        ...tokenBackground,
-        ...tokenButton
-      },
-      textColor: tokenColors
+   
     }
   }
 } satisfies Config;
