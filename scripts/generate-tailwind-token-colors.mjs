@@ -4,6 +4,7 @@ import path from 'node:path';
 const ROOT = process.cwd();
 const TOKENS_CSS_PATH = path.join(ROOT, 'app/assets/css/tokens.css');
 const OUTPUT_PATH = path.join(ROOT, 'tailwind.tokens.generated.ts');
+const TOKENS_JSON_PATH = path.join(ROOT, 'tokens/global.json');
 
 function toKebabCase(value) {
   return value
@@ -17,6 +18,51 @@ function splitNameAndScale(value) {
   const match = value.match(/^([A-Za-z]+)(\d+)$/);
   if (!match) return toKebabCase(value);
   return `${toKebabCase(match[1])}-${match[2]}`;
+}
+
+function splitTokenSegment(segment) {
+  return String(segment)
+    .split('/')
+    .flatMap((part) => part.split(/[^A-Za-z0-9]+/g))
+    .filter(Boolean);
+}
+
+function toLowerCamel(parts) {
+  if (parts.length === 0) return '';
+  const [first, ...rest] = parts;
+  const normalize = (token) => token.charAt(0).toUpperCase() + token.slice(1);
+  return first.charAt(0).toLowerCase() + first.slice(1) + rest.map(normalize).join('');
+}
+
+function collectNumberTokenVarNames(node, pathParts = [], output = new Set()) {
+  if (!node || typeof node !== 'object') return output;
+
+  if (node.$type === 'number' && Object.prototype.hasOwnProperty.call(node, '$value')) {
+    const flatParts = pathParts.flatMap((part) => splitTokenSegment(part));
+    const varName = toLowerCamel(flatParts);
+    if (varName) output.add(varName);
+    return output;
+  }
+
+  for (const [key, value] of Object.entries(node)) {
+    if (key.startsWith('$')) continue;
+    collectNumberTokenVarNames(value, [...pathParts, key], output);
+  }
+
+  return output;
+}
+
+function appendPxToNumberTokenVars(css, numberVarNames) {
+  return css.replace(/^(\s*--([A-Za-z0-9_-]+)\s*:\s*)([^;]+)(;\s*)$/gm, (full, prefix, rawName, rawValue, suffix) => {
+    if (!numberVarNames.has(rawName)) return full;
+
+    const trimmed = rawValue.trim();
+    if (/^-?\d+(\.\d+)?$/.test(trimmed)) {
+      return `${prefix}${trimmed}px${suffix}`;
+    }
+
+    return full;
+  });
 }
 
 function toTailwindTokenKey(rawName) {
@@ -59,7 +105,20 @@ function categorizeToken(rawName) {
 }
 
 async function main() {
-  const css = await fs.readFile(TOKENS_CSS_PATH, 'utf8');
+  const [rawCss, rawTokensJson] = await Promise.all([
+    fs.readFile(TOKENS_CSS_PATH, 'utf8'),
+    fs.readFile(TOKENS_JSON_PATH, 'utf8')
+  ]);
+
+  const tokensJson = JSON.parse(rawTokensJson);
+  const numberVarNames = collectNumberTokenVarNames(tokensJson);
+  const cssWithPx = appendPxToNumberTokenVars(rawCss, numberVarNames);
+
+  if (cssWithPx !== rawCss) {
+    await fs.writeFile(TOKENS_CSS_PATH, cssWithPx, 'utf8');
+  }
+
+  const css = cssWithPx;
 
   const variableMatches = [...css.matchAll(/^\s*--([A-Za-z0-9_-]+)\s*:/gm)];
 
@@ -82,10 +141,7 @@ async function main() {
     .forEach((rawName) => {
       const category = categorizeToken(rawName);
       const key = toTailwindTokenKey(rawName);
-      // I token sizing arrivano numerici (es. 8, 16, 24): li rendiamo lunghezze CSS in px.
-      const value = category === 'sizing'
-        ? `calc(var(--${rawName}) * 1px)`
-        : `var(--${rawName})`;
+      const value = `var(--${rawName})`;
       tokensByCategory[category].push([key, value]);
     });
 
